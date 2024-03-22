@@ -6,7 +6,7 @@ import "../../static/css/Records.css";
 const Records = ({ cliente, onClienteRemovido }) => {
   const handleDeleteClick = async () => {
     try {
-      await axios.delete(`https://af-estrutura-de-dados-sistema-de-registro-de-clientes-backend.vercel.app/cliente/${cliente.cpf}`);
+      await axios.delete(`http://localhost:8080/cliente/${cliente.cpf}`);
       onClienteRemovido(cliente.cpf);
     } catch (error) {
       console.error('Erro ao excluir cliente:', error);

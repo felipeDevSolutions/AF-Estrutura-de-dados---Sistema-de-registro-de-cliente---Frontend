@@ -37,7 +37,7 @@ const Home = () => {
 
   const fetchTodosClientes = async () => {
     try {
-      const response = await axios.get('https://af-estrutura-de-dados-sistema-de-registro-de-clientes-backend.vercel.app/cliente');
+      const response = await axios.get('http://localhost:8080/cliente');
       setClientes(response.data);
     } catch (error) {
       console.error('Erro ao buscar todos os clientes:', error);
@@ -50,7 +50,7 @@ const Home = () => {
 
   const handleVerTodosClientes = async () => {
     try {
-      const response = await axios.get('https://af-estrutura-de-dados-sistema-de-registro-de-clientes-backend.vercel.app/cliente');
+      const response = await axios.get('http://localhost:8080/cliente');
       const clientesRecebidos = response.data;
       
       if (clientesRecebidos.length === 0) {
