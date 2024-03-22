@@ -168,7 +168,7 @@ const Home = () => {
         </div>
       )}
       <footer>
-        Copyright &copy; Felipe Costa
+        Desenvolvido pelo Grupo 34.
       </footer>
     </div>
   );
