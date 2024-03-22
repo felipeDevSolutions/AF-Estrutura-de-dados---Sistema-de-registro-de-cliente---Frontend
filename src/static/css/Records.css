@@ -1,0 +1,61 @@
+.records {
+    width: 100%;
+    user-select: none;
+    text-align: left;
+  }
+  
+  .records tr{
+    background-color: #e4e4e4;
+  }
+  
+  .records th {
+    text-align: center;
+    height: 40px;
+    background-color: #b5b5b5;
+    font-size: small;
+  }
+  
+  .records th:first-child{
+    border-radius: 20px 0 0 0;
+  }
+  
+  .records th:last-child{
+    border-radius: 0 20px 0 0;
+  }
+  
+  .records td {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+  }
+
+  .records td:first-child{
+    width: 10%;
+  }
+  
+  
+  
+  .records tr:hover{
+    background-color: #b2b2b29e; /* Cor padrão ao passar o mouse */
+  }
+  
+  .action-cell {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: default; /* Adicione este estilo para evitar que o cursor mude ao passar sobre a coluna "Ação" */
+  }
+  
+  .action-cell button{
+    margin: 0 5px;
+  }
+  
+  .action-cell i{
+    font-size: 20px;
+    align-items: center;
+  }
+  
+  
+  
+  
