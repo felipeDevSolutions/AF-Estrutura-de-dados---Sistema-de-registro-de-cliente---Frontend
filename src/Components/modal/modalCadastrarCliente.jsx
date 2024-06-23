@@ -23,7 +23,7 @@ const ModalCadastrarCliente = ({ closeModal, onClienteCadastrado }) => {
 
   const handleCadastrarCliente = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/cliente', cliente);
+      const response = await axios.post('http://localhost:8080/clientes', cliente);
       onClienteCadastrado(response.data);
       closeModal();
     } catch (error) {

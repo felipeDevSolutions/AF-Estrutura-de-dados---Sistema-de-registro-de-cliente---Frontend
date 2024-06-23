@@ -21,7 +21,7 @@ const Home = () => {
 
   const fetchClientesPorCPF = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/cliente/buscar?cpf=${searchTerm}`);
+      const response = await axios.get(`http://localhost:8080/clientes/buscar?cpf=${searchTerm}`);
       if (response.status === 200) {
         setClientes([response.data]);
       }
@@ -37,7 +37,7 @@ const Home = () => {
 
   const fetchTodosClientes = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/cliente');
+      const response = await axios.get('http://localhost:8080/clientes');
       setClientes(response.data);
     } catch (error) {
       console.error('Erro ao buscar todos os clientes:', error);
@@ -50,7 +50,7 @@ const Home = () => {
 
   const handleVerTodosClientes = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/cliente');
+      const response = await axios.get('http://localhost:8080/clientes');
       const clientesRecebidos = response.data;
       
       if (clientesRecebidos.length === 0) {
